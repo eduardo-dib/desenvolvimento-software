@@ -63,16 +63,16 @@ private long idade(){
 
  }
 private boolean validaEmail(){
-    // Expressão regular para verificar se o e-mail contém um "@" e um "."
+    
         String regex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
 
-        // Compila a expressão regular
+        
         Pattern pattern = Pattern.compile(regex);
 
-        // Cria um objeto Matcher para o e-mail
+        
         Matcher matcher = pattern.matcher(email);
 
-        // Verifica se o e-mail corresponde à expressão regular
+        
         if(matcher.matches()){
             return true;
         }

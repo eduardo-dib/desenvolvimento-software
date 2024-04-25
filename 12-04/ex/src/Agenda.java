@@ -24,8 +24,10 @@ public class Agenda {
 
     public Contato buscarContato(String nome){
         return contatos.stream().
-        filter(p -> p.getNome().equals(nome)).
-        findFirst().orElse(null);
+        filter(p -> p.getNome().
+        equals(nome)).
+        findFirst().
+        orElse(null);
     }
 
     public List<Contato> getContatos() {
